@@ -1,0 +1,6 @@
+version: 2
+
+sources:
+    - name: northwind_dataset
+      tables:
+        - name: public_orders 
