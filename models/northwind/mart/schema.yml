@@ -1,0 +1,21 @@
+
+version: 2
+
+models:
+    - name: fact_orders
+      description: "Tabela de fato de venda"
+      columns:
+          - name: order_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: dim_customers
+      description: "Tabela de customers"
+      columns:
+          - name: customer_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null

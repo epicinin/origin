@@ -1,6 +1,26 @@
 version: 2
 
 sources:
-    - name: northwind_dataset
-      tables:
-        - name: public_orders 
+  - name: northwind_dataset
+    description: This is a replica of the Postgres database used by our app
+    tables:
+      - name: public_orders
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: order_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+          - name: customer_id
+            description: Id of the customer table
+      - name: public_customers
+        description: >
+          This is the customers table
+        columns:
+          - name: customer_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
