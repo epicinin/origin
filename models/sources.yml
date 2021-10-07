@@ -24,3 +24,48 @@ sources:
             tests:
               - unique
               - not_null
+      - name: public_products
+        description: >
+          This is the customers table
+        columns:
+          - name: product_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: public_categories
+        description: >
+          This is the customers table
+        columns:
+          - name: category_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: public_suppliers
+        description: >
+          This is the customers table
+        columns:
+          - name: supplier_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: public_shippers
+        description: >
+          This is the customers table
+        columns:
+          - name: shipper_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: public_employees
+        description: >
+          This is the customers table
+        columns:
+          - name: employee_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
